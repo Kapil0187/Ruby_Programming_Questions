@@ -6,10 +6,24 @@ class FindMax
     @num2 = num2
     @num3 = num3
   end
+  # def find_max()
+  #   if @num1>@num2 && @num1>@num3
+  #     puts("Maximum Number is "+@num1.to_s)
+  #   elsif @num2>@num1 && @num2>@num3
+  #     puts("Maximum Number is "+@num2.to_s)
+  #   else
+  #     puts("Maximum Number is "+@num3.to_s)
+  #   end
+  # end
+
   def find_max()
-    if @num1>@num2 && @num1>@num3
-      puts("Maximum Number is "+@num1.to_s)
-    elsif @num2>@num1 && @num2>@num3
+    if @num1>@num2
+      if(@num1>@num3)
+        puts("Maximum Number is "+@num1.to_s)
+      else
+        puts("Maximum Number is "+@num3.to_s)
+      end
+    elsif @num2>@num3
       puts("Maximum Number is "+@num2.to_s)
     else
       puts("Maximum Number is "+@num3.to_s)
