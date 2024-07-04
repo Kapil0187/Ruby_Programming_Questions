@@ -7,7 +7,6 @@ Implement a class method people_count that keeps track of the number of Person o
 =end
 
 
-
 class Person
   @@personcount = 0
   def initialize()
